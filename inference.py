@@ -1,12 +1,18 @@
+# pip install torch🥺
 !pip install --upgrade -q diffusers[torch]
-!pip install -U -q datasets
-!pip install -q accelerate
-!pip install -q wandb
+!pip install transformers[torch]
 !pip install -q peft
 
+%cd /kaggle/working/
+!git clone https://github.com/huggingface/diffusers
+%cd diffusers
+!pip install -q .
+
+
+import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
-from transformers import Trainer, TrainingArguments
 from diffusers import StableDiffusionPipeline
+import requests
 
 class CFG:
     gpt = 'sberbank-ai/rugpt3small_based_on_gpt2'
@@ -22,7 +28,7 @@ class Inference:
     def __init__(self):
         self.DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.gpt_tokenizer = GPT2Tokenizer.from_pretrained(CFG.gpt)
-        self.gpt_model = GPT2LMHeadModel.from_pretrained(CFG.gpt).to(DEVICE)
+        self.gpt_model = GPT2LMHeadModel.from_pretrained(CFG.gpt).to(self.DEVICE)
 #         model.load_state_dict(torch.load(CFG.gpt_weights))
         
         self.SD_pipe = StableDiffusionPipeline.from_pretrained(CFG.SD, torch_dtype=torch.float16)
