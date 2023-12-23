@@ -1,0 +1,327 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    line-height: 1.4;
+    color: #000;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-weight: 550;
+    font-size: 2vw;
+}
+h2 {
+    font-weight: 800;
+    font-size: 2vw;
+}
+h3 {
+    font-weight: 550;
+    font-size: 2vw;
+}
+h4 {
+    font-size: 1vw;
+}
+a {
+    font-size: 1vw;
+}
+h5 {
+    font-weight: 550;
+    font-size: 1vw;
+}
+
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .6);
+}
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar-menu li {
+    display: inline-block;
+}
+.navbar-menu li a {
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.navbar-menu li a:hover {
+    opacity: 1;
+    color: white;
+    height: auto;
+    width: auto;
+    background-color: #000;
+    border-radius: 100px;
+    transform: scale(1.05);
+}
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.Registr_LogIn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.Registr_LogIn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 9px 19px rgba(255, 127, 80, 0.9);
+}
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.8vw;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+.navbar-brand:hover {
+    color: coral;
+    transform: scale(1.2);
+}
+
+
+main {
+    flex: 1;
+
+    padding-bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ganDiv {
+    border-radius: 10%;
+    width: 55%;
+    height: 600px;
+    border-color: #525252;
+}
+
+.ganDiv .output{
+    width: 40%;
+    height: 65%;
+}
+
+
+.form-user-data{
+    margin-top: 5%;
+    width: 35%;
+    height: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .6);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.form-title{
+    text-align: center;
+    margin: 0 0 8% 0;
+    font-weight: 600;
+}
+select {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 10%;
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #6d6d6d;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+select:focus {
+    border-bottom: 1px solid coral;
+}
+.form-button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+}
+.form-button {
+    width: 50%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: coral;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.form-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 9px 19px rgba(255, 127, 80, 0.9);
+}
+
+.form-file-button {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 10%;
+    width: 80%;
+    padding: 0 0 10px 0;
+}
+.download-example-button{
+    width: 50%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: coral;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+.download-example-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 9px 19px rgba(255, 127, 80, 0.9);
+}
+
+
+.form {
+    margin-top: 5%;
+    margin: auto;
+    width: 35%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .6);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.form-input, .form-button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+}
+.form-title{
+    text-align: center;
+    margin: 0 0 8% 0;
+    font-weight: 600;
+}
+.form-input {
+    text-align: center;
+    margin-bottom: 10%;
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #6d6d6d;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+.form-input:focus {
+    border-bottom: 1px solid coral;
+}
+.form-button {
+    width: 75%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: coral;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.form-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 9px 19px rgba(255, 127, 80, 0.9);
+}
+
+
+.footerbar {
+    flex-shrink: 0;
+
+    background-color: #000;
+    color: white;
+    padding: 3%;
+    position: absolute;
+    flex: 0 0 auto;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+.footerbar .footerbar-container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.footerbar-contacts-filling{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.footerbar-contacts-filling li {
+    display: inline-block;
+}
+.footerbar-contacts-filling li a {
+    display: inline-block;
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.4s ease-in-out;
+}
+.footerbar-contacts-filling li a:hover {
+    opacity: 1;
+    color: black;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border-radius: 100px;
+    transform: scale(1.05);
+}
+.footerbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.OpenSourse {
+    margin-left: 35px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 1px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.OpenSourse:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 19px rgba(255, 127, 80, 0.9);
+}
