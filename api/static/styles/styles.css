@@ -1,0 +1,244 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    line-height: 1.4;
+    color: #000;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-weight: 550;
+    font-size: 2vw;
+}
+h2 {
+    font-weight: 800;
+    font-size: 2.5vw;
+}
+h3 {
+    font-weight: 550;
+    font-size: 2vw;
+}
+h4 {
+    font-size: 1.4vw;
+}
+a {
+    font-size: 1.1vw;
+}
+h5 {
+    font-weight: 550;
+    font-size: 1.3vw;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .6);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+.navbar-menu li a {
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.navbar-menu li a:hover {
+    opacity: 1;
+    color: white;
+    height: auto;
+    width: auto;
+    background-color: #000;
+    border-radius: 100px;
+    transform: scale(1.05);
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.Registr_LogIn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.Registr_LogIn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 9px 19px rgba(255, 127, 80, 0.9);
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 2vw;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: coral;
+    transform: scale(1.2);
+}
+
+
+.subheader {
+    background-color: coral;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%, 50% 65%);
+    -webkit-clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%, 50% 65%);
+}
+.subheader h2{
+    padding-top: 150px;
+    color: white;
+}
+
+main {
+    flex: 1;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 10%;
+}
+
+.about-progect {
+    padding-top: 1%;
+    padding-bottom: 15%;
+    display: inline-block;
+}
+.about-progect-main-text{
+    float: left;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+}
+.about-progect-img img{
+    margin: auto;
+    border-radius: 10%;
+    height: 50%;
+    width: 50%;
+}
+
+.function-in-application-main-textAndImg-first{
+    padding-top: 3%;
+}
+.function-in-application-main-textAndImg-first .textFirst{
+    float: right;
+    text-align: right;
+    height: 100%;
+    width: 55%;
+}
+.imgFirst img{
+    height: 30%;
+    width: 30%;
+}
+.function-in-application-main-textAndImg-second {
+    padding-top: 5%;
+}
+.function-in-application-main-textAndImg-second .textSecond {
+    float: left;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+}
+.imgSecond img {
+    height: 50%;
+    width: 50%;
+}
+
+
+.footerbar {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 3%;
+}
+
+.footerbar .footerbar-container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footerbar-contacts-filling{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.footerbar-contacts-filling li {
+    display: inline-block;
+}
+.footerbar-contacts-filling li a {
+    display: inline-block;
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.4s ease-in-out;
+}
+.footerbar-contacts-filling li a:hover {
+    opacity: 1;
+    color: black;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border-radius: 100px;
+    transform: scale(1.05);
+}
+.footerbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.OpenSourse {
+    margin-left: 35px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 1px 10px rgba(255, 127, 80, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+.OpenSourse:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 19px rgba(255, 127, 80, 0.9);
+}
